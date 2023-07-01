@@ -12,8 +12,13 @@
     <link rel="stylesheet" href="{{ url('/css/style.css') }}">
 </head>
 <body>  
-    @include('layout.sidebar')
-    @yield('header')
+    @include('layout.header')
+    <div class="body__wrapper">
+        @include('layout.sidebar')
+        <div class="content">
+            @yield('content')
+        </div>
+    </div>
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>

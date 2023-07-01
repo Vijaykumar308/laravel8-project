@@ -3,6 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+}
+:root{
+    --body-bg: #f1f1f1;
+    --navbar-clr:#4A6492;
+}
 body {
     font-family: 'Nunito';
+    font-size: 1.6rem;
+}
+.body__wrapper{
+    background-color: var(--body-bg);
+    display: flex;
+}
+.body__wrapper > .sidebar {
+    background-color: var(--navbar-clr);
+    height: 100vh; 
+    flex: 1;
+    position: sticky;
+    left: 0; 
+    top: 0;   
+}
+.content{
+    flex: 6;
+    position: sticky;
+    margin-top: 5rem;
+}
+header{
+    position: fixed;
+    width: 100%;
+    left: 14.2%;
+    top: 0;
+    z-index: 10;
+    background-color: var(--body-bg);
 }

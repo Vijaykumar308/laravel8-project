@@ -16,6 +16,8 @@ a{
 :root{
     --body-bg: #f1f1f1;
     --navbar-clr:#4A6492;
+    --primary-clr:#6791c5;
+    --secondary-clr: #D0D9DB;
 }
 
 body {
@@ -40,7 +42,8 @@ body {
 .content{
     flex: 6;
     position: sticky;
-    margin-top: 3rem;
+    margin: 3rem auto;
+    width: 96%;
 }
 
 header{
@@ -155,7 +158,6 @@ header{
 }
 
 .header-title{
-    text-transform: capitalize;
     font-size: 2.4rem;
     font-weight: 200;
     position: relative;
@@ -178,9 +180,43 @@ header{
     font-weight: 200;
     border-radius: 5px;
     letter-spacing: 1px;
-    border: 1px solid #D0D9DB;
-    background-color: #D0D9DB;
+    border: 1px solid var(--secondary-clr);
+    background-color:  var(--secondary-clr);
     color: #585858;
     cursor: pointer;
 }
+
+.gt-icon{
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+.record{
+    width: 96%;
+    margin: auto;
+}
+.button-group{
+
+}
+
+.action-btn{
+    font-size: 16px;
+    padding: 9px 20px;
+    background: none;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;;
+}
+
+.save-btn{
+    background: var(--primary-clr);
+    color: #fff;
+    border-radius: 7px 0px 0px 7px;
+}
+
+.cancle-btn{
+    background: var(--secondary-clr);
+    margin-left: -4px;
+    border-radius: 0px 7px 7px 0px;
+}
+
 

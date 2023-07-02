@@ -61,7 +61,6 @@ header{
     color: grey;
     font-size: 1.7rem;
     justify-content: flex-end;
-    cursor: pointer;
 }
 
 .dropdown-content {
@@ -85,3 +84,61 @@ header{
     background-color: #ddd;
 }
 .dropdown:hover .dropdown-content {display: block;}
+
+/* SIDEBAR STYLING */
+
+.logo{
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.logo::after{
+    content: 'Crud App';
+    position: absolute;
+    font-size: 2.4rem;
+    font-weight: bold;
+    top: 25%;
+    left: 44%;
+    color: var(--navbar-clr);
+}
+.logo img{
+    width: 10rem;
+    height: 7rem;
+    background-color: #fff;
+}
+
+.sidebarMenu{
+     margin-top: 1.6rem;
+}
+.sidebarListItem{
+    padding: 1.3rem 2rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.6rem;
+    align-items: center;
+    border-radius: 1rem;
+    color: #ddd;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+.sidebar-icons{
+    font-size: 1.6rem;
+}
+.sidebarListItemLabel{
+    margin-left: 1.2rem;
+
+}
+.active > li{
+    background-color: var(--secondary-color-100);
+    border-radius: 0;
+    border-right: 5px solid var(--secondary-color-100);
+}
+.active > li > *{
+    color: #000;
+}
+.sidebarListItem:hover{
+    color: #fff;
+    border-radius: 0;
+}
+

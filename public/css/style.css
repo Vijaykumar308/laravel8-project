@@ -18,6 +18,9 @@ a{
     --navbar-clr:#4A6492;
     --primary-clr:#6791c5;
     --secondary-clr: #D0D9DB;
+    --panel-default-text:#333333;
+    --panel-default-bg: #ffffff;
+
 }
 
 body {
@@ -194,9 +197,6 @@ header{
     width: 96%;
     margin: auto;
 }
-.button-group{
-
-}
 
 .action-btn{
     font-size: 16px;
@@ -204,9 +204,11 @@ header{
     background: none;
     border: none;
     text-transform: capitalize;
-    cursor: pointer;;
+    cursor: pointer;
 }
-
+.button-group{
+    margin-bottom: 2rem;
+}
 .save-btn{
     background: var(--primary-clr);
     color: #fff;
@@ -220,3 +222,93 @@ header{
 }
 
 
+/* form created */
+
+.record-grid{
+    display: grid;
+    grid-column-gap: 15px;
+    grid-template-columns: minmax(auto,67%) minmax(auto,33%);
+}
+
+.middle{
+    margin-bottom: 1.6rem;
+}
+.panel-default{
+    background: linear-gradient(to bottom,var(--panel-default-bg) 0,
+    var(--panel-default-bg) 29px,
+    #fff 29px,
+    #fff 100%);
+}
+.panel-heading{
+    color: var(--panel-default-text);
+    background-color: var(--panel-default-bg);
+    border-color: transparent;
+    padding: 6px 10px;
+    border-bottom: 1px solid transparent;
+}
+
+.panel-title{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding-top: calc((3rem - 1.5rem * 1.4)/ 2);
+    padding-bottom: calc((3rem - 1.5rem * 1.4)/ 2);
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: inherit;
+    font-weight: 500;
+}
+.panel-body{
+    padding: 14px;
+}
+
+.panel > .panel-body.panel-body-form {
+    padding-bottom: 2px;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-group {
+    margin-bottom: 12px;
+}
+
+.col-sm-6{
+    position: relative;
+    min-height: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100%;
+}
+.control-label{
+    margin-bottom: 2px;
+    color: #999;
+    font-weight: 400;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 6px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #D1D5D6;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.form-control:focus{
+   outline: 0 ;
+   border-color: #66ADE9;
+   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102, 175, 233, 0.6);
+   /* background-color: red; */
+
+}

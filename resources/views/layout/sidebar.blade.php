@@ -15,10 +15,10 @@
                     </li>
                 </a>
 
-                <a href="/about">
+                <a href="{{ route('view')}}">
                     <li class="sidebarListItem">
                         <i class="fa-solid fa-bars-progress"></i>
-                        <span>About Me</span>
+                        <span>Student</span>
                     </li>
                 </a>
             </ul>

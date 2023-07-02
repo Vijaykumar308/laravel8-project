@@ -21,8 +21,7 @@ Route::view('/mains/dashboard','dashboard.homepage')->name('home');
 Route::view('users/profile','users.profile')->name('profile.view');
 Route::view('users/changePassword','users.change_password')->name('profile.changePassword');
 
-Route::get('lead/create',function(){
+Route::view('student','view')->name('view');
+Route::get('student/create',function(){
    return view('create');
 })->name('create');
-
-// Route::view('create','create')->name('create'); 

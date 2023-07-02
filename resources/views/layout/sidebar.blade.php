@@ -17,7 +17,7 @@
 
                 <a href="/about">
                     <li class="sidebarListItem">
-                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-bars-progress"></i>
                         <span>About Me</span>
                     </li>
                 </a>
